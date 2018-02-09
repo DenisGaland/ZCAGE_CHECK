@@ -1,0 +1,43 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Cage_Control.controller.View1"
+	displayBlock="true">
+	<App>
+		<pages>
+			<Page backgroundDesign="List" showHeader="false">
+				<content>
+					<HBox width="100%" id="__hbox0" alignContent="Center" alignItems="End">
+						<items>
+							<HBox width="1%" id="space" alignItems="Center"></HBox>
+							<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://home-share" size="2em" id="__icon0"/>
+							<Label text="Label" width="100%" id="Mag"/>
+							<HBox width="3%" id="space2" alignItems="Center"></HBox>
+							<Button visible="false" text="OK" width="100px" id="OK" icon="sap-icon://sys-enter-2" type="Emphasized" press="Validate"/>
+						</items>
+					</HBox>
+					<HBox width="100%" id="__hbox1"/>
+					<HBox width="100%" id="__hbox2" alignItems="Center">
+						<items>
+							<HBox width="1%" id="space3" alignItems="Center"></HBox>
+							<Label text="Scan Cage :" width="100%" id="Lab_cage"/>
+							<SearchField width="80%" id="Cage" placeholder="" search="CheckCage"/>
+						</items>
+					</HBox>
+					<HBox width="100%" id="hbox" alignItems="Center">
+						<items>
+							<HBox width="1%" id="space4" alignItems="Center"></HBox>
+							<Label text="Info" width="100%" id="Info" visible="false"/>
+						</items>
+					</HBox>
+					<HBox width="100%" id="H_LIST">
+						<items>
+							<HBox width="6%" id="hbox2" alignItems="Center"></HBox>
+							<List id="List" items="{itemModel>/items}" visible="false">
+								<StandardListItem title="{itemModel>ZembArt}" description="{itemModel>TYPE_TEXT}" icon="sap-icon://sap-box" iconDensityAware="false"
+									iconInset="false"/>
+							</List>
+						</items>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
